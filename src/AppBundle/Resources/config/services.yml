@@ -1,0 +1,3 @@
+services:
+    pichet.test.interface:
+        class: AppBundle\Model\Pichet\Pichet
