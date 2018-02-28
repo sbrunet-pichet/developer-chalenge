@@ -23,25 +23,4 @@ class DefaultController extends Controller
         // replace this example code with whatever you need
         return $this->render('default/index.html.twig',array("result" => $params));
     }
-    
-     /**
-     * @Route("/codacy", name="codacy")
-     */
-    public function codacyAction(Request $request)
-    {
-        $test_codacy = false;
-        
-        if(false === $test_codacy){
-            //undeclared static
-            self::wtf();
-        }else{
-            // unsed else case
-        }
-        
-        // Bad type declaration with second undeclared parameter
-        $this->indexAction($test_codacy,3.14);
-        
-        // replace this example code with whatever you need
-        return $this->render('default/index.html.twig',array("result" => $params));
-    } 
 }
